@@ -1,0 +1,25 @@
+.select{
+     border-radius: 5px;
+     padding: 10px 25px;
+     height: 40px;
+     width: 200px;
+    align-content: center;
+    text-align: center;
+}
+.maja{
+     height: 500px;
+     width:800px;
+     background-color: aliceblue;
+     align-content: center;
+    text-align: center;
+    
+}
+
+.sub{
+    margin: 4px;
+    float: left;
+    width: 400px;
+    height:400px;
+    background-color: red;
+    margin-left:200px;  
+}
