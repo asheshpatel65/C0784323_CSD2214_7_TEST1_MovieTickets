@@ -6,8 +6,8 @@
     </title>
     </head>
     <body>
-    <div class="wrapper">
-  <div class="container" style="background:lightblue">
+    <div class="main">
+  <div class="container" style="background:antiquewhite">
     <div class="title">Checkout Form</div>
     
     <div class="input-form">
@@ -26,11 +26,11 @@
       <div class="section-3">
         <div class="items">
           <label class="label">Expire date</label>
-          <input type="text" class="input" data-mask="00 / 00" placeholder="MM / YY" required id="Expiration Date">
+          <input class="input" data-mask="00 / 00"type="date" min="2021-02-01"  required> 
         </div>
         <div class="items">
           <div id="CVV">
-            <label class="label">CVV code</label>
+            <label class="label" id="CVV">CVV code</label>
             <div class="tooltip">
             </div>
           </div>
