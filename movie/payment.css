@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 *{
   margin: 0;
   padding: 0;
@@ -104,26 +106,6 @@ body{
   height: 25px;
   text-align:center;
   cursor: pointer;
-}
-
-.cvc .cvc-img{
-  position: absolute;
-  top: -300%;
-  right: 0;
-  background: #5f6c7d;
-  padding: 12px;
-  border-radius: 5px;
-  display: none;
-}
-
-.cvc .cvc-img img{
-  width: 100px;
-  height: auto;
-  display: block;
-}
-
-.cvc:hover .cvc-img{
-  display: block;
 }
 
 @media screen and (max-width: 460px){
