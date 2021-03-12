@@ -1,5 +1,5 @@
 
-function selectmovie() {
+function selectmovie(){
 
 	var a = document.getElementById("moviename").value;
 	document.getElementById('movie_name').innerHTML = '';
