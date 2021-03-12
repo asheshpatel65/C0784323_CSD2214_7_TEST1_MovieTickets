@@ -1,6 +1,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="payment.css" type="text/css">
+    <script src="payment.js"></script>
     <title>
     </title>
     </head>
@@ -13,23 +14,23 @@
       <div class="section-1">
         <div class="items">
           <label class="label">card number</label>
-          <input type="text" class="input" maxlength="16" data-mask="0000 0000 0000 0000"placeholder="1234 1234 1234 1234" required="">
+          <input type="text" class="input" maxlength="16" data-mask="0000 0000 0000 0000"placeholder="1234 1234 1234 1234" required="" id="Card Number">
         </div>
       </div>
       <div class="section-2">
         <div class="items">
-          <label class="label">card holder</label>
-          <input type="text" class="input" placeholder="Coding Market" required="">
+          <label class="label">card holder name</label>
+          <input type="text" class="input" required="" id="Card Holder Name">
         </div>
       </div>
       <div class="section-3">
         <div class="items">
           <label class="label">Expire date</label>
-          <input type="text" class="input" data-mask="00 / 00" placeholder="MM / YY" required="">
+          <input type="text" class="input" data-mask="00 / 00" placeholder="MM / YY" required id="Expiration Date">
         </div>
         <div class="items">
-          <div class="cvc">
-            <label class="label">cvc code</label>
+          <div id="CVV">
+            <label class="label">CVV code</label>
             <div class="tooltip">
             </div>
           </div>
@@ -37,9 +38,7 @@
         </div>
       </div>
     </div>
-
-      <div class="btn">proceed</div>
-
+      <div><input  class="btn" type="submit" value="Confirm" onclick="payment()"></div>
     
   </div>
 </div>
