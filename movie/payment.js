@@ -8,8 +8,6 @@ function payment(){
              alert("Error, Please enter only numbers in card number");
              return false;
              }
-            
-            
              var b = document.getElementById("Card Holder Name").value;
              if(b=="") {
 	         alert("Error, Please enter Card Holder Name");
@@ -28,17 +26,12 @@ function payment(){
              if(c.length>3){
              alert("Invalid, Please enter 3 digit CVV");
              return false;
-             }
-
-
-             
+             } 
              var d = document.getElementById("Expiration Date").value;
                 
              if(d=="") {
 	         alert("Invalid, Please select expiration month and year");
              return false;
              }
-            
-   
              
            }
