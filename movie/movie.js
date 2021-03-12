@@ -1,13 +1,3 @@
-$(document).ready(function() {
-	$('input[type="checkbox"]').click(function () {
- var count=document.querySelectorAll("input:checked").length
-  document.getElementById('no_seat').innerHTML = '';
-	document.getElementById('no_seat').innerHTML = count;
-
-});
- 
-});
-
 
 function selectmovie() {
 
