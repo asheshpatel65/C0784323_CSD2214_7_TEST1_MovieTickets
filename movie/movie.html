@@ -2,18 +2,20 @@
 <html lang="en">
 
 <head>
-    <title>index</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.j"></script>
     <link rel="stylesheet" href="movie.css" type="text/css">
+    <script src="movie.js"></script>
+    <title>index</title>
 </head>
 
 <body >
-   <div class="maja" >
+   <div class="good" >
         
-       <h1>select moive</h1>
-   <select class="select">
-       <option>MS Dhoni</option>
-       <option>Milkha singh</option>
-       <option>Merry kom</option>
+       <h1 style="font:Montserrat-SemiBold ; font-size:40px">Moive Maja</h1>
+   <select class="select" onchange="selectmovie()" id="moviename">
+       <option value="MS Dhoni">MS Dhoni</option>
+       <option value="Milkha singh">Milkha singh</option>
+       <option value="Merry kom">Merry kom</option>
    </select>
        
            <table style="background:lightblue" class="table">
@@ -57,12 +59,12 @@
            
            </table>
        
-       <div  style="margin-left: 600px;">
-	<p>movie selected</p><span id="movie_name"></span>
-	<p>ticket price</p><span id="price"></span>
-	<p>number of seat selected</p><span id="no_seat"></span>
-	<p>total price</p><span id="total"></span>
-           <a href="./payment.html"><button value="seats">book seats</button></a>
+<div  class="detail" style="margin-left: 600px;">
+	<p style="font-size:25px">selected movie:<span id="movie_name"></span></p>
+	<p style="font-size:25px">price: <span id="price"></span></p>
+	<p style="font-size:25px">number of seat:<span id="no_seat"></span></p>
+	
+    <a href="./payment.html"><button value="seats" style="height: 60px ;width: 200px ; font-size: 20px" onclick="selectmovie()">book seats</button></a>
 </div>
 </div>
    
