@@ -1,37 +1,33 @@
 function payment(){
-             var a = document.getElementById("Card Number").value;
-             if(a=="") {
+             var active = document.getElementById("Card Number").value;
+             if(active=="") {
 	         alert("Error, Please enter Card Number");
              return false;
              }
-              if(isNaN(a)){
+              if(isNaN(active)){
              alert("Error, Please enter only numbers in card number");
              return false;
              }
-             var b = document.getElementById("Card Holder Name").value;
-             if(b=="") {
+            
+            
+             var boost = document.getElementById("Card Holder Name").value;
+             if(boost=="") {
 	         alert("Error, Please enter Card Holder Name");
              return false;
              }
              
-             var c = document.getElementById("CVV").value;
-             if(c=="") {
+             var check = document.getElementById("CVV").value;
+             if(check=="") {
 	         alert("Error, Please enter CVV");
              return false;
              }
-             if(c.length<3){
+             if(check.length<3){
              alert("Error, Please enter 3 digit CVV");
              return false;
              } 
-             if(c.length>3){
+             if(check.length>3){
              alert("Invalid, Please enter 3 digit CVV");
-             return false;
-             } 
-             var d = document.getElementById("Expiration Date").value;
-                
-             if(d=="") {
-	         alert("Invalid, Please select expiration month and year");
              return false;
              }
              
-           }
+        }
